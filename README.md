@@ -26,8 +26,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/maciej-szeremeta/Order-summary-card-solution)
-- Live Site URL: [GitHub Page](https://maciej-szeremeta.github.io/Order-summary-card-solution/)
+- Solution URL: [GitHub](https://github.com/maciej-szeremeta/Results-summary-component-solution)
+- Live Site URL: [GitHub Page](https://maciej-szeremeta.github.io/Results-summary-component-solution)
 
 ## My process
 
