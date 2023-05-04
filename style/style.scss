@@ -18,6 +18,7 @@
   align-items: stretch;
   overflow: hidden;
 }
+
 .result {
   flex: 1;
   padding: 1.2rem;
@@ -32,25 +33,7 @@
     color: hsl(256, 100%, 79%);
     font-size: 1.5rem;
   }
-  &__text {
-    text-align: center;
-    color: var(--lightLavenderColor);
-    font-size: 1.75rem;
-    font-weight: 700;
-  }
-  &__paragraf {
-    text-align: center;
-    color: var(--lightLavenderColor);
-  }
-  &__text {
-    margin: 1rem auto;
-  }
-  &__paragraf {
-    padding: 0 40px;
-    margin: 1rem auto;
-    color: hsl(256, 100%, 79%);
-  }
-  .score {
+  &__score {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,67 +51,65 @@
     font-size: 1rem;
     font-weight: 700;
     color: hsl(246, 100%, 74%);
-    &__number {
-      font-size: 4rem;
-      color: var(--lightLavenderColor);
-    }
+  }
+  &__number {
+    font-size: 4rem;
+    color: var(--lightLavenderColor);
+  }
+  &__text {
+    text-align: center;
+    margin: 1rem auto;
+    color: var(--lightLavenderColor);
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  &__paragraf {
+    text-align: center;
+    color: var(--lightLavenderColor);
+    padding: 0 40px;
+    margin: 1rem auto;
+    color: hsl(256, 100%, 79%);
   }
 }
+
 .summary {
   flex: 1;
   padding: 1.2rem 2rem;
-
   &__title {
     font-size: 1.5rem;
     color: var(--darkGrayBlueColor);
     margin-bottom: 1.5rem;
   }
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    padding: 1rem 24px;
-    border-radius: 12px;
-    &--relation {
-      background-color: hsla(0, 100%, 67%, 0.05);
-    }
-    &--memory {
-      background-color: hsla(39, 100%, 56%, 0.05);
-    }
-    &--verbal {
-      background-color: hsla(166, 100%, 37%, 0.05);
-    }
-    &--visual {
-      background-color: hsla(234, 85%, 45%, 0.05);
-    }
-  }
   &__list {
     list-style: none;
     margin-bottom: 2rem;
   }
-  &__button {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 1rem 24px;
-    border-radius: 36px;
-    color: var(--lightLavenderColor);
-    font-weight: 700;
-    font-size: 1.25rem;
-    background-color: var(--darkGrayBlueColor);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.5s;
-    &:hover {
-      background-color: var(--lightRoyalBlue-BackgroundColor);
-    }
-  }
 }
-.logo-item {
+
+.item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem 24px;
+  border-radius: 12px;
+  &--relation {
+    background-color: hsla(0, 100%, 67%, 0.05);
+  }
+  &--memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+  }
+  &--verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+  }
+  &--visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__icon {
     display: block;
     margin-right: 10px;
@@ -148,13 +129,30 @@
       color: var(--cobaltBlue-ColorText);
     }
   }
-}
-
-.summary-score {
-  color: var(--darkGrayBlueColor);
-  font-weight: 900;
+  &__score {
+    color: var(--darkGrayBlueColor);
+    font-weight: 900;
+  }
   &__number {
     color: hsla(224, 30%, 27%, 0.5);
+  }
+}
+
+.button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 24px;
+  border-radius: 36px;
+  color: var(--lightLavenderColor);
+  font-weight: 700;
+  font-size: 1.25rem;
+  background-color: var(--darkGrayBlueColor);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: var(--lightRoyalBlue-BackgroundColor);
   }
 }
 
@@ -169,6 +167,11 @@
     &__title {
       font-size: 1rem;
     }
+    &__score {
+      width: 150px;
+      height: 150px;
+      padding: 1rem;
+    }
     &__text {
       font-size: 1.5rem;
       margin: 0.75rem auto;
@@ -177,11 +180,6 @@
       font-size: 1rem;
       margin: 0.75rem auto;
     }
-    .score {
-      width: 150px;
-      height: 150px;
-      padding: 1rem;
-    }
   }
   .summary {
     padding: 1rem 1.5rem 0 1rem;
@@ -189,11 +187,11 @@
       font-size: 1rem;
       margin-bottom: 1rem;
     }
-    &__item {
-      margin-bottom: 0.875rem;
-    }
     &__list {
       margin-bottom: 1rem;
     }
+  }
+  .item {
+    margin-bottom: 0.875rem;
   }
 }

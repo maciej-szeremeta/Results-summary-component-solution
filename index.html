@@ -16,84 +16,84 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body class="page">
-    <div class="modal" role="modal">
-      <div class="result" role="result">
+    <div class="modal">
+      <section class="result">
         <h1 class="result__title">Your Result</h1>
-        <p class="score">
-          <span class="score__number">76</span>
+        <p class="result__score">
+          <span class="result__number">76</span>
           of 100
         </p>
         <p class="result__text">Great</p>
         <p class="result__paragraf">
           You scored higher than 65% of the people who have taken these tests.
         </p>
-      </div>
-      <div class="summary" >
-        <h2 class="summary__title" role="summary-title">Summary</h2>
-        <ul class="summary__list" role="summary-list">
-          <li class="summary__item summary__item--relation">
-            <div class="logo-item">
+      </section>
+      <section class="summary" >
+        <h2 class="summary__title">Summary</h2>
+        <ul class="summary__list">
+          <li class="item item--relation">
+            <div class="item__logo">
               <img
                 src="./assets/images/icon-reaction.svg"
                 alt="relation score"
-                class="logo-item__icon"
+                class="item__icon"
               />
-              <span class="logo-item__text logo-item__text--relation"
+              <span class="item__text item__text--relation"
                 >Reaction</span
               >
             </div>
-            <div class="summary-score">
-              80 <span class="summary-score__number">/ 100</span>
+            <div class="item__score">
+              80 <span class="item__number">/ 100</span>
             </div>
           </li>
-          <li class="summary__item summary__item--memory">
-            <div class="logo-item">
+          <li class="item item--memory">
+            <div class="item__logo">
               <img
                 src="./assets/images/icon-memory.svg"
                 alt="memory score"
-                class="logo-item__icon"
+                class="item__icon"
               />
-              <span class="logo-item__text logo-item__text--memory"
+              <span class="item__text item__text--memory"
                 >Memory</span
               >
             </div>
-            <div class="summary-score">
-              92 <span class="summary-score__number"> / 100</span>
+            <div class="item__score">
+              92 <span class="item__number"> / 100</span>
             </div>
           </li>
-          <li class="summary__item summary__item--verbal">
-            <div class="logo-item">
+          <li class="item item--verbal">
+            <div class="item__logo">
               <img
                 src="./assets/images/icon-verbal.svg"
                 alt="verbal score"
-                class="logo-item__icon"
+                class="item__icon"
               />
-              <span class="logo-item__text logo-item__text--verbal"
+              <span class="item__text item__text--verbal"
                 >Verbal</span
               >
             </div>
-            <div class="summary-score">
-              61 <span class="summary-score__number"> / 100</span>
+            <div class="item__score">
+              61 <span class="item__number"> / 100</span>
             </div>
           </li>
-          <li class="summary__item summary__item--visual">
-            <div class="logo-item">
+          <li class="item item--visual">
+            <div class="item__logo">
               <img
                 src="./assets/images/icon-visual.svg"
                 alt="visual score"
-                class="logo-item__icon"
+                class="item__icon"
               />
-              <span class="logo-item__text logo-item__text--visual"
+              <span class="item__text item__text--visual"
                 >Visual</span
               >
             </div>
-            <div class="summary-score">
-              72 <span class="summary-score__number"> / 100</span>
+            <div class="item__score">
+              72 <span class="item__number"> / 100</span>
             </div>
           </li>
         </ul>
-        <button class="summary__button">Continue</button>
-      </div>
+        <button class="button">Continue</button>
+      </section>
     </div>
   </body>
 </html>
